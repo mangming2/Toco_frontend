@@ -19,19 +19,22 @@ const Home = () => {
 
 const StyledFirst = styled.div`
   color: black;
-  margin-top: 500px;
+  background-color: red;
+  margin-top: 1500px;
   opacity: 0;
   transition: all 0.5s;
 `;
 const StyledSecond = styled.div`
   color: black;
-  margin-top: 500px;
+  background-color: red;
+  margin-top: 1500px;
   opacity: 0;
   transition: all 0.5s;
 `;
 const StyledThird = styled.div`
   color: black;
-  margin-top: 500px;
+  background-color: red;
+  margin-top: 1500px;
   opacity: 0;
   transition: all 0.5s;
 `;
