@@ -2,13 +2,28 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Acumin Pro";
+  background: #f2e7d5;
+  color: #483620;
+  text-rendering: optimizeLegibility;
+  font-synthesis: none;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 * {

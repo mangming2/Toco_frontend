@@ -5,21 +5,23 @@ function AppBar() {
   const router = useRouter();
   return (
     <Wrap>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/ProjectFund">
-        <a>projectfund</a>
-      </Link>
-      <Link href="/PennyFund">
-        <a>pennyfund</a>
-      </Link>
-      <Link href="/About">
-        <a>About</a>
-      </Link>
-      <Link href="/MyPage">
-        <a>mypage</a>
-      </Link>
+      <StyledLinkBox>
+        <Link href="/">
+          <a>Home</a>
+        </Link>
+        <Link href="/ProjectFund">
+          <a>projectfund</a>
+        </Link>
+        <Link href="/PennyFund">
+          <a>pennyfund</a>
+        </Link>
+        <Link href="/About">
+          <a>About</a>
+        </Link>
+        <Link href="/MyPage">
+          <a>mypage</a>
+        </Link>
+      </StyledLinkBox>
     </Wrap>
   );
 }
@@ -31,4 +33,11 @@ const Wrap = styled.div`
   justify-content: space-between;
   height: 80px;
   line-height: 80px;
+`;
+
+const StyledLinkBox = styled.div`
+  width: 487px;
+  height: 24px;
+  padding: 0px;
+  gap: 32px;
 `;
