@@ -1,5 +1,8 @@
 import { useEffect, useRef, useCallback } from "react";
 import styled from "styled-components";
+import ChaingeFund from "../src/components/index/ChangeFund";
+import DescriptService from "../src/components/index/DescriptService";
+import ProjectFund from "../src/components/index/ProjectFund";
 import useScrollFadeIn from "../src/hooks/useScrollFadeIn";
 const Home = () => {
   const animatedItem = {
@@ -10,9 +13,10 @@ const Home = () => {
 
   return (
     <>
-      <StyledFirst {...animatedItem[0]}>메인페이지</StyledFirst>
-      <StyledSecond {...animatedItem[1]}>메인페이지</StyledSecond>
-      <StyledThird {...animatedItem[2]}>메인페이지</StyledThird>
+      <StyledFirst>Hi</StyledFirst>
+      <DescriptService {...animatedItem[0]} />
+      <ProjectFund {...animatedItem[1]} />
+      <ChaingeFund />
     </>
   );
 };
@@ -21,8 +25,6 @@ const StyledFirst = styled.div`
   color: black;
   background-color: red;
   margin-top: 1500px;
-  opacity: 0;
-  transition: all 0.5s;
 `;
 const StyledSecond = styled.div`
   color: black;

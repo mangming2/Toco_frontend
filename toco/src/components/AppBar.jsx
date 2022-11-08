@@ -1,27 +1,33 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styled from "styled-components";
+import Image from "next/image";
+
+import Logo from "../../public/logo.png";
+import Profile from "../../public/profile.png";
 function AppBar() {
   const router = useRouter();
   return (
     <Wrap>
+      <Image src={Logo} width="84px" height="36px" margin-left="40px" />
       <StyledLinkBox>
         <Link href="/">
-          <a>Home</a>
+          <StyledLink>Home</StyledLink>
         </Link>
         <Link href="/ProjectFund">
-          <a>projectfund</a>
+          <StyledLink>projectfund</StyledLink>
         </Link>
         <Link href="/PennyFund">
-          <a>pennyfund</a>
+          <StyledLink>pennyfund</StyledLink>
         </Link>
         <Link href="/About">
-          <a>About</a>
+          <StyledLink>About</StyledLink>
         </Link>
         <Link href="/MyPage">
-          <a>mypage</a>
+          <StyledLink>mypage</StyledLink>
         </Link>
       </StyledLinkBox>
+      <Image src={Profile} width="40px" height="40px" margin-left="40px" />
     </Wrap>
   );
 }
@@ -30,14 +36,27 @@ export default AppBar;
 
 const Wrap = styled.div`
   display: flex;
-  justify-content: space-between;
-  height: 80px;
-  line-height: 80px;
+  justify-content: space-around;
+  align-items: center;
 `;
 
 const StyledLinkBox = styled.div`
   width: 487px;
   height: 24px;
-  padding: 0px;
-  gap: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const StyledLink = styled.a`
+  /* Body/Medium */
+
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-right: 32px;
+
+  color: #483620;
 `;
