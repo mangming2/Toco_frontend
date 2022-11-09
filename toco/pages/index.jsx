@@ -14,9 +14,15 @@ const Home = () => {
   return (
     <>
       <StyledFirst>Hi</StyledFirst>
-      <DescriptService {...animatedItem[0]} />
-      <ProjectFund {...animatedItem[1]} />
-      <ChaingeFund />
+      <div {...animatedItem[0]}>
+        <DescriptService />
+      </div>
+      <div {...animatedItem[1]}>
+        <ProjectFund />
+      </div>
+      <div {...animatedItem[2]}>
+        <ChaingeFund />
+      </div>
     </>
   );
 };
