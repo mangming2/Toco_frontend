@@ -3,13 +3,13 @@ import { useRouter } from "next/router";
 import styled from "styled-components";
 import Image from "next/image";
 
-import Logo from "../../public/logo.png";
+import Logo from "../../public/logo2.png";
 import Profile from "../../public/profile.png";
 function AppBar() {
   const router = useRouter();
   return (
     <Wrap>
-      <Image src={Logo} width="84px" height="36px" margin-left="40px" />
+      <Image src={Logo} width="70px" height="30px" margin-left="40px" />
       <StyledLinkBox>
         <Link href="/">
           <StyledLink>Home</StyledLink>
@@ -38,6 +38,8 @@ const Wrap = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: #f2e7d5;
+  height: 75px;
 `;
 
 const StyledLinkBox = styled.div`

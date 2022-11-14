@@ -6,6 +6,11 @@ import ProjectFund from "../src/components/index/ProjectFund";
 import useScrollFadeIn from "../src/hooks/useScrollFadeIn";
 import useObserver from "../src/hooks/useObserver";
 import Team from "../src/components/index/Team";
+import Banner from "../public/Banner.png";
+import Image from "next/image";
+import Community from "../src/components/index/Community";
+import Vision from "../src/components/index/Vision";
+import Support from "../src/components/index/Support";
 const Home = () => {
   const animatedItem = {
     0: useScrollFadeIn("up", 1, 0),
@@ -31,45 +36,45 @@ const Home = () => {
     });
   };
   return (
-    <>
-      <StyledFirst>
-        <button onClick={() => handleClickNavLink(0)}></button>
+    <Wrap>
+      <button onClick={() => handleClickNavLink(0)}>테스트용 버튼</button>
+
+      <StyledFirst ref={heroRef}>
+        <Image src={Banner} margin-left="40px" />
       </StyledFirst>
-      <StyledFirst ref={heroRef}>Hi</StyledFirst>
-      <div {...animatedItem[0]}>
+      <StyledSecond {...animatedItem[0]}>
+        <ProjectFund />
+      </StyledSecond>
+      <StyledThird {...animatedItem[1]}>
+        <ChaingeFund />
+      </StyledThird>
+      <div>
         <DescriptService />
       </div>
-      <div {...animatedItem[1]}>
-        <ProjectFund />
+      <div>
+        <Community />
       </div>
-      <div {...animatedItem[2]}>
-        <ChaingeFund />
+      <div>
+        <Vision />
       </div>
       <div>
         <Team />
       </div>
-    </>
+      <div>
+        <Support />
+      </div>
+    </Wrap>
   );
 };
 
+const Wrap = styled.div``;
+
 const StyledFirst = styled.div`
-  color: black;
-  background-color: red;
-  margin-top: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
-const StyledSecond = styled.div`
-  color: black;
-  background-color: red;
-  margin-top: 1500px;
-  opacity: 0;
-  transition: all 0.5s;
-`;
-const StyledThird = styled.div`
-  color: black;
-  background-color: red;
-  margin-top: 1500px;
-  opacity: 0;
-  transition: all 0.5s;
-`;
+const StyledSecond = styled.div``;
+const StyledThird = styled.div``;
 
 export default Home;
