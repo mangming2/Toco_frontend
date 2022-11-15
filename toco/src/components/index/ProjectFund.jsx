@@ -27,6 +27,9 @@ export default function ProjectFund() {
 }
 
 const Wrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 154px;
   margin-left: 100px;
 `;
@@ -44,7 +47,9 @@ const StyledDiv = styled.div`
   margin-top: 40px;
   display: flex;
   height: 460px;
-
+  width: 1090px;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 `;
 
