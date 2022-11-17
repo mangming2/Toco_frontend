@@ -17,7 +17,7 @@ export default function MyChangeFund() {
 }
 
 const Wrap = styled.div`
-  margin-left: 116px;
+  margin-left: 30px;
 `;
 
 const Title = styled.div`
@@ -47,4 +47,5 @@ const CardWrapper = styled.div`
 
   display: flex;
   justify-content: center;
+  margin-left: 30px;
 `;

@@ -39,7 +39,7 @@ const Wrap = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: #f2e7d5;
-
+  width: 100%;
   height: 75px;
 `;
 

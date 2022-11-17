@@ -7,6 +7,7 @@ import Logo from "../../../public/logo.png";
 export default function Account() {
   return (
     <Wrap>
+      <div>My Page</div>
       <Image src={Logo} width="82px" height="82px" />
       <div>
         <p>Account 1</p>
@@ -18,5 +19,6 @@ export default function Account() {
 
 const Wrap = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
 `;

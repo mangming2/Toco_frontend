@@ -1,5 +1,6 @@
+import PennyFundList from "../src/components/pennyfund/PennyFundList";
 function PennyFund() {
-  return <div>잔돈 펀딩</div>;
+  return <PennyFundList />;
 }
 
 export default PennyFund;

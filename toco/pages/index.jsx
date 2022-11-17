@@ -45,24 +45,24 @@ const Home = () => {
       <StyledSecond {...animatedItem[0]}>
         <ProjectFund />
       </StyledSecond>
-      <StyledThird {...animatedItem[1]}>
+      <StyledSecond {...animatedItem[1]}>
         <ChaingeFund />
-      </StyledThird>
-      <div>
+      </StyledSecond>
+      <StyledSecond>
         <DescriptService />
-      </div>
-      <div>
+      </StyledSecond>
+      <StyledSecond>
         <Community />
-      </div>
-      <div>
+      </StyledSecond>
+      <StyledSecond>
         <Vision />
-      </div>
-      <div>
+      </StyledSecond>
+      <StyledSecond>
         <Team />
-      </div>
-      <div>
+      </StyledSecond>
+      <StyledSecond>
         <Support />
-      </div>
+      </StyledSecond>
     </Wrap>
   );
 };
@@ -74,7 +74,11 @@ const StyledFirst = styled.div`
   align-items: center;
   justify-content: center;
 `;
-const StyledSecond = styled.div``;
+const StyledSecond = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 const StyledThird = styled.div``;
 
 export default Home;

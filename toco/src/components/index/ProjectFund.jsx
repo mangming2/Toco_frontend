@@ -27,9 +27,6 @@ export default function ProjectFund() {
 }
 
 const Wrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: 154px;
   margin-left: 100px;
 `;
@@ -41,6 +38,7 @@ const Title = styled.div`
   font-size: 32px;
   line-height: 46px;
   color: #483620;
+  align-items: flex-start;
 `;
 
 const StyledDiv = styled.div`

@@ -38,13 +38,16 @@ const Title = styled.div`
   font-size: 32px;
   line-height: 46px;
   color: #483620;
+  align-items: flex-start;
 `;
 
 const StyledDiv = styled.div`
   margin-top: 40px;
   display: flex;
   height: 460px;
-
+  width: 1090px;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 `;
 

@@ -17,7 +17,7 @@ export default function MyProjectFund() {
 }
 
 const Wrap = styled.div`
-  margin-left: 116px;
+  margin-left: 30px;
 `;
 
 const Title = styled.div`
