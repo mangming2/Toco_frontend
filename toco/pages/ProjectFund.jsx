@@ -1,5 +1,6 @@
+import ProjectFundList from "../src/components/projectfund/ProjectFundList";
 function ProjectFund() {
-  return <div>프로젝트 펀딩</div>;
+  return <ProjectFundList />;
 }
 
 export default ProjectFund;

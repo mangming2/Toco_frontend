@@ -3,6 +3,10 @@ import TeamCard from "./TeamCard";
 import Image from "next/image";
 import ProjectDes from "../../../public/projectdes.png";
 import styled from "styled-components";
+import Jiho from "../../../public/jiho.png";
+import Jisun from "../../../public/jisun.png";
+import Ilgwang from "../../../public/ilgwang.png";
+import Eunchan from "../../../public/eunchan.png";
 
 function Team() {
   return (
@@ -10,8 +14,10 @@ function Team() {
       <StyledTitle>팀 소개</StyledTitle>
       <div>투코 운영진을 소개합니다.</div>
       <TeamWrap>
-        <TeamCard />
-        <TeamCard />
+        <TeamCard img={Jisun} name="배지선" job="Smart Contract Developer" />
+        <TeamCard img={Ilgwang} name="이일광" job="Product Manager" />
+        <TeamCard img={Jiho} name="이지호" job="Front-End Developer" />
+        <TeamCard img={Eunchan} name="고은찬" job="NFT Developer" />
       </TeamWrap>
     </Wrap>
   );

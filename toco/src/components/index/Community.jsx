@@ -5,7 +5,7 @@ import useScrollFadeIn from "../../../src/hooks/useScrollFadeIn";
 export default function Community() {
   return (
     <Wrap>
-      <StyledTitle>ToCo 프로젝트 소개</StyledTitle>
+      <StyledTitle>ToCo 커뮤니티</StyledTitle>
       <StyledDesWrap>
         <div>
           <SmallTitle>투명한 코인 TOcO</SmallTitle>
@@ -29,18 +29,37 @@ export default function Community() {
           </div>
         </div>
         <div>
-          <SmallTitle>투코의 핵심 경쟁력</SmallTitle>
+          <SmallTitle>투코 커뮤니티 이해관계자</SmallTitle>
           <div>
+            <span>기부자</span>
             <StyledSpan>
-              효율적인 운영 : 기존 기부 업체 평균 운영비(12%) vs 투코 프로젝트
-              운영비(5%){" "}
+              기부자들은 커뮤니티 거버넌스를 통해 기부 대상자, 기부 물품
+              제조사를 선정 할 수 있습니다. <br />
+              기부자들만의 커뮤니티를 만들어, 긍정적인 선순환을 유도합니다.
             </StyledSpan>
+            <span>기부 물품 제조사</span>
             <StyledSpan>
-              <p>기부금의 투명화 :</p>
-              <p>
-                기부금이 사용되는 99%의 내역들을 자동 온체인화(블록체인 시스템
-                상 등록), 누구든지 내역을 볼 수 있습니다.
-              </p>
+              기부 물품 제조사는 엄격한 기준으로 선정합니다.
+              <br />
+              지갑을 사용해야하며, 주기적으로 거래내역을 검수해야합니다.
+              <br />
+              투코에 등록 완료 시, 우선순의로 계약을 고려합니다.
+            </StyledSpan>
+            <span>기부 대상자</span>
+            <StyledSpan>
+              기부를 맏는 대상자 입니다.
+              <br />
+              실제로 온라인 커뮤니티에서 크게 활동하지는 않아도, 기부자들과의
+              오프라인 만남 혹은 다양한 이벤트에 참여할 수 있습니다.
+              <br />
+            </StyledSpan>
+            <span>운영진</span>
+            <StyledSpan>
+              운영진은 원격업무를 위주로 진행하며, 컨트롤 타워의 역할을
+              맡습니다.
+              <br />
+              Web3 시대의 공간적 한계를 초월해 기부 재단을 적은 운영비로도
+              운영할 수 있는 근거가 됩니다.
             </StyledSpan>
           </div>
         </div>
