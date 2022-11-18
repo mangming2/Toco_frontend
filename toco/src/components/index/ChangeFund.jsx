@@ -27,8 +27,9 @@ export default function ChangeFund() {
 }
 
 const Wrap = styled.div`
-  margin-top: 154px;
-  margin-left: 100px;
+  margin-top: 120px;
+
+  width: 1345px;
 `;
 
 const Title = styled.div`

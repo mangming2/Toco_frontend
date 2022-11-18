@@ -10,8 +10,8 @@ export default function Account() {
       <div>My Page</div>
       <Image src={Logo} width="82px" height="82px" />
       <div>
-        <p>Account 1</p>
-        <p>0x121213124141</p>
+        <div>Account 1</div>
+        <div>0x121213124141</div>
       </div>
     </Wrap>
   );

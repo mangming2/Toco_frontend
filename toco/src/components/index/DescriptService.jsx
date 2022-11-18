@@ -7,7 +7,7 @@ export default function DescriptService() {
     <Wrap>
       <StyledTitle>ToCo 프로젝트 소개</StyledTitle>
       <StyledDesWrap>
-        <div>
+        <StyledScript>
           <SmallTitle>투명한 코인 TOcO</SmallTitle>
           <StyledSpan>
             투코는, 블록체인 생태계를 활용해, 기부금이 모이고, 사용되는 내역들이
@@ -17,8 +17,8 @@ export default function DescriptService() {
             우리는 기부를 온체인화해, 사람의 실수를 최소화하고, 개선하고자
             합니다.
           </StyledSpan>
-        </div>
-        <div>
+        </StyledScript>
+        <StyledScript>
           <SmallTitle>함께하는 코인 TOcO</SmallTitle>
           <div>
             <StyledSpan>투코는, 블록체인 기부 커뮤니티를 운영합니다</StyledSpan>
@@ -27,23 +27,21 @@ export default function DescriptService() {
               업체들, 기부를 받는 기부대상자들이 함께 어울릴 수 있습니다.
             </StyledSpan>
           </div>
-        </div>
-        <div>
+        </StyledScript>
+        <StyledScript>
           <SmallTitle>투코의 핵심 경쟁력</SmallTitle>
           <div>
             <StyledSpan>
-              효율적인 운영 : 기존 기부 업체 평균 운영비(12%) vs 투코 프로젝트
-              운영비(5%){" "}
+              <StyledBold>효율적인 운영 : </StyledBold> 기존 기부 업체 평균
+              운영비(12%) vs 투코 프로젝트 운영비(5%){" "}
             </StyledSpan>
             <StyledSpan>
-              <p>기부금의 투명화 :</p>
-              <p>
-                기부금이 사용되는 99%의 내역들을 자동 온체인화(블록체인 시스템
-                상 등록), 누구든지 내역을 볼 수 있습니다.
-              </p>
+              <StyledBold>기부금의 투명화 : </StyledBold>
+              기부금이 사용되는 99%의 내역들을 자동 온체인화(블록체인 시스템 상
+              등록), 누구든지 내역을 볼 수 있습니다.
             </StyledSpan>
           </div>
-        </div>
+        </StyledScript>
       </StyledDesWrap>
     </Wrap>
   );
@@ -52,16 +50,29 @@ export default function DescriptService() {
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
+
+  width: 1345px;
 `;
 const StyledDesWrap = styled.div`
   align-items: flex-start;
 `;
-const StyledSpan = styled.p``;
+const StyledScript = styled.div`
+  margin-top: 50px;
+`;
+const StyledSpan = styled.div`
+  margin-left: 30px;
+  line-height: 26px;
+`;
+const StyledBold = styled.span`
+  font-size: 24px;
+  font-weight: bold;
+`;
 
 const SmallTitle = styled.div`
   font-family: "Noto Sans KR";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 36px;
   line-height: 52px;
   color: #44c144;

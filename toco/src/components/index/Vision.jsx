@@ -7,11 +7,11 @@ export default function Vision() {
     <Wrap>
       <StyledTitle>ToCo 프로젝트 VISION</StyledTitle>
       <StyledDesWrap>
-        <SmallTitle>기부 생태계의 혁신</SmallTitle>
-        <SmallTitle>100% 신뢰할 수 있는 기부</SmallTitle>
-        <SmallTitle>사회적 불평등 해소</SmallTitle>
-        <SmallTitle>블록체인 기술의 진보</SmallTitle>
-        <SmallTitle>이해관계자들 간의 행복 선순환</SmallTitle>
+        <SmallTitle>· 기부 생태계의 혁신</SmallTitle>
+        <SmallTitle>· 100% 신뢰할 수 있는 기부</SmallTitle>
+        <SmallTitle>· 사회적 불평등 해소</SmallTitle>
+        <SmallTitle>· 블록체인 기술의 진보</SmallTitle>
+        <SmallTitle>· 이해관계자들 간의 행복 선순환</SmallTitle>
       </StyledDesWrap>
     </Wrap>
   );
@@ -20,18 +20,22 @@ export default function Vision() {
 const Wrap = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 120px;
 `;
 const StyledDesWrap = styled.div`
-  align-items: flex-start;
+  text-align: center;
 `;
-const StyledSpan = styled.p``;
 
 const SmallTitle = styled.div`
+  margin-top: 30px;
+
   font-family: "Noto Sans KR";
   font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 52px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+
   color: #44c144;
 `;
 const StyledTitle = styled.div`
@@ -54,4 +58,5 @@ const StyledTitle = styled.div`
   color: #483620;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 60px;
 `;

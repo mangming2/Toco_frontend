@@ -27,8 +27,9 @@ export default function ProjectFund() {
 }
 
 const Wrap = styled.div`
-  margin-top: 154px;
-  margin-left: 100px;
+  margin-top: 120px;
+
+  width: 1345px;
 `;
 
 const Title = styled.div`
@@ -54,7 +55,7 @@ const StyledDiv = styled.div`
 const Container = styled.div`
   //가로스크롤
   display: flex;
-  gap: 16px;
+  gap: 30px;
   height: 350px;
   overflow: hidden;
   .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {

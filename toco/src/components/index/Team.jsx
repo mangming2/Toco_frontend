@@ -12,7 +12,7 @@ function Team() {
   return (
     <Wrap>
       <StyledTitle>팀 소개</StyledTitle>
-      <div>투코 운영진을 소개합니다.</div>
+      <StyledInt>투코 운영진을 소개합니다.</StyledInt>
       <TeamWrap>
         <TeamCard img={Jisun} name="배지선" job="Smart Contract Developer" />
         <TeamCard img={Ilgwang} name="이일광" job="Product Manager" />
@@ -28,6 +28,8 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 1345px;
+  margin-top: 120px;
 `;
 const StyledTitle = styled.div`
   font-family: "Noto Sans KR";
@@ -43,9 +45,28 @@ const StyledTitle = styled.div`
 
   color: #483620;
 `;
+const StyledInt = styled.div`
+  margin-top: 8px;
+  margin-bottom: 88px;
+  /* Body/Medium */
+
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  text-align: center;
+
+  /* Muted Color */
+
+  color: #483620;
+`;
+
 const TeamWrap = styled.div`
   display: flex;
-
+  width: 1345px;
   justify-content: center;
   align-items: center;
 `;
