@@ -6,7 +6,7 @@ import ProjectFund from "../src/components/index/ProjectFund";
 import useScrollFadeIn from "../src/hooks/useScrollFadeIn";
 import useObserver from "../src/hooks/useObserver";
 import Team from "../src/components/index/Team";
-import Banner from "../public/Banner.png";
+import Banner from "../public/banner.png";
 import Image from "next/image";
 import Community from "../src/components/index/Community";
 import Vision from "../src/components/index/Vision";
@@ -44,7 +44,7 @@ const Home = () => {
       <button onClick={() => handleClickNavLink(0)}>테스트용 버튼</button>
 
       <StyledFirst ref={heroRef}>
-        <Image src={Banner} margin-left="40px" />
+        <Image src={Banner} margin-left="40px" alt="banner" />
       </StyledFirst>
       <StyledSecond {...animatedItem[0]}>
         <ProjectFund />
