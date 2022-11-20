@@ -5,7 +5,7 @@ function Footer() {
   return (
     <Wrap>
       <div>ToCo</div>
-      <div>here is footer</div>
+      <div>here is</div>
     </Wrap>
   );
 }
