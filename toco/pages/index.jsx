@@ -16,6 +16,10 @@ const Home = () => {
     0: useScrollFadeIn("up", 1, 0),
     1: useScrollFadeIn("up", 1, 0.2),
     2: useScrollFadeIn("up", 1, 0.3),
+    3: useScrollFadeIn("up", 1, 0.3),
+    4: useScrollFadeIn("up", 1, 0.3),
+    5: useScrollFadeIn("up", 1, 0.3),
+    6: useScrollFadeIn("up", 1, 0.3),
   };
 
   const [currentVisibleIndex, setCurrentVisibleIndex] = useState(0);
@@ -48,19 +52,19 @@ const Home = () => {
       <StyledSecond {...animatedItem[1]}>
         <ChaingeFund />
       </StyledSecond>
-      <StyledSecond>
+      <StyledSecond {...animatedItem[2]}>
         <DescriptService />
       </StyledSecond>
-      <StyledSecond>
+      <StyledSecond {...animatedItem[3]}>
         <Community />
       </StyledSecond>
-      <StyledSecond>
+      <StyledSecond {...animatedItem[4]}>
         <Vision />
       </StyledSecond>
-      <StyledSecond>
+      <StyledSecond {...animatedItem[5]}>
         <Team />
       </StyledSecond>
-      <StyledSecond>
+      <StyledSecond {...animatedItem[6]}>
         <Support />
       </StyledSecond>
     </Wrap>
